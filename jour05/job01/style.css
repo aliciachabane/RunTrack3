@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(to right, rgb(149, 100, 174), rgb(108, 221, 108));
+}
+h1{
+    text-align: center;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+input{
+    width: 20%;
+    height: 20%;
+}
+form{
+    margin-left: 45%;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    margin-left: 48% ;
+    margin-top: 5% ;
+}

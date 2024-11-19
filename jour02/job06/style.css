@@ -1,0 +1,13 @@
+/* Styles par défaut */
+body {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles appliqués après le code Konami */
+.konami {
+    background-color: #1a95d7;
+    color: #fff;
+}

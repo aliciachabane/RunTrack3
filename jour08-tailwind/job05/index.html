@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduction TailwindCSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100" style="background: linear-gradient(to right, rgb(245, 144, 168), rgb(149, 222, 247));
+;"></body>
+    <!-- Header -->
+    <header class="bg-white shadow" style="background: linear-gradient(to right, rgb(245, 144, 168), rgb(149, 222, 247));"> 
+        <div class="container mx-auto py-6 px-4"> 
+            <h1 class="text-3xl font-bold text-gray-900"style="text-align:center;">Mon Projet TailwindCSS</h1> 
+        </div> 
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center text-black py-20" style="background-image: url('image/fond.jpg');">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-4">Bienvenue dans mon projet</h2>
+            <p class="text-2xl mb-8" style="background-color: rgba(255, 255, 255, 0.5); border-radius: 70px; "> 
+            Reproduire des éléments de design avec TailwindCSS </p>
+            <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold">Get Started</a>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="container mx-auto py-20 px-4">
+      <i><h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Galeries</h2></i>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Image 1 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="image/dragoon.webp" alt="Image 1" class="w-full">
+            </div>
+            <!-- Image 2 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="image/etvbdfn.webp" alt="Image 2" class="w-full">
+            </div>
+            <!-- Image 3 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="image/EpsOLEMyaJBnkldbvn d.webp" alt="Image 3" class="w-full">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Mon Projet TailwindCSS. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-orange-500 shadow-lg">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#" class="text-white text-lg font-bold">Logo</a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-white">Accueil</a></li>
+                <li><a href="index.html" class="text-white">Inscription</a></li>
+                <li><a href="index.html" class="text-white">Connexion</a></li>
+                <li><a href="index.html" class="text-white">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container mx-auto p-4">
+        <h2 class="text-2xl font-bold mb-4">Créer un compte</h2>
+        <form action="index.html" method="post" class="bg-white p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+                <label class="block mb-2">Civilité</label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="civilite" value="monsieur" class="form-radio text-blue-500">
+                    <span class="ml-2">Monsieur</span>
+                </label>
+                <label class="inline-flex items-center ml-4">
+                    <input type="radio" name="civilite" value="madame" class="form-radio text-blue-500">
+                    <span class="ml-2">Madame</span>
+                </label>
+            </div>
+            <div class="mb-4">
+                <label for="prenom" class="block mb-2">Prénom :</label>
+                <div class="relative">
+                    <span class="material-icons absolute left-3 top-2 text-gray-400">person</span>
+                    <input type="text" id="prenom" name="prenom" class="form-input w-full pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="nom" class="block mb-2">Nom :</label>
+                <div class="relative">
+                    <span class="material-icons absolute left-3 top-2 text-gray-400">person_outline</span>
+                    <input type="text" id="nom" name="nom" class="form-input w-full pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="adresse" class="block mb-2">Adresse :</label>
+                <div class="relative">
+                    <span class="material-icons absolute left-3 top-2 text-gray-400">home</span>
+                    <input type="text" id="adresse" name="adresse" class="form-input w-full pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block mb-2">Email :</label>
+                <div class="relative">
+                    <span class="material-icons absolute left-3 top-2 text-gray-400">email</span>
+                    <input type="email" id="email" name="email" class="form-input w-full pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block mb-2">Mot de passe :</label>
+                <div class="relative">
+                    <span class="material-icons absolute left-3 top-2 text-gray-400">lock</span>
+                    <input type="password" id="password" name="password" class="form-input w-full pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="confirm_password" class="block mb-2">Confirmer le mot de passe :</label>
+                <div class="relative">
+                    <span class="material-icons absolute left-3 top-2 text-gray-400">lock_outline</span>
+                    <input type="password" id="confirm_password" name="confirm_password" class="form-input w-full pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Passions</label>
+                <label class="inline-flex items-center">
+                    <input type="checkbox" name="passions" value="informatique" class="form-checkbox text-blue-500">
+                    <span class="ml-2">Informatique</span>
+                </label>
+                <label class="inline-flex items-center ml-4">
+                    <input type="checkbox" name="passions" value="voyages" class="form-checkbox text-blue-500">
+                    <span class="ml-2">Voyages</span>
+                </label>
+                <label class="inline-flex items-center ml-4">
+                    <input type="checkbox" name="passions" value="sport" class="form-checkbox text-blue-500">
+                    <span class="ml-2">Sport</span>
+                </label>
+                <label class="inline-flex items-center ml-4">
+                    <input type="checkbox" name="passions" value="lecture" class="form-checkbox text-blue-500">
+                    <span class="ml-2">Lecture</span>
+                </label>
+            </div>
+            <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition duration-300">Valider</button>
+        </form>
+    </section>
+
+    <footer class="bg-orange-500 text-white p-4 mt-8">
+        <div class="container mx-auto">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="index.html" class="text-white">Accueil</a></li>
+                <li><a href="index.html" class="text-white">Inscription</a></li>
+                <li><a href="index.html" class="text-white">Connexion</a></li>
+                <li><a href="index.html" class="text-white">Rechercher</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("affichage des lutins et gnobs")
